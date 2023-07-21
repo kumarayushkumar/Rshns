@@ -1,0 +1,35 @@
+@use 'custom' as *;
+
+html {
+    scrollbar-color: $tertiary $secondary;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background: $secondary;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $tertiary
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-weight: 700 !important;
+}
+
+p {
+    font-weight: 300 !important;
+}
+
+.text-tertiary {
+    color: #d0f5ff;
+}
+
+ul {
+    list-style: none;
+}
+

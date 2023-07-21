@@ -1,0 +1,54 @@
+@use 'custom' as *;
+
+#services {
+    position: relative;
+    background-color: $secondary;
+
+    li {
+        font-size: 1rem;
+        @include media-breakpoint-up(md) {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.services-heading {
+    position: absolute;
+    top: 8%;
+    // right: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+
+    @include media-breakpoint-up(md) {
+        top: 10%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        top: 12%;
+    }
+}
+
+.text-color-green {
+    color: #1ef51e;
+}
+
+.services-image {
+    object-fit: cover;
+    height: 100%;
+    background-image: url('../images/pexels-photo-339620.webp');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+}
+
+.m-top {
+    margin-top: 6rem ;
+    @include media-breakpoint-up(sm) {
+        margin-top: 7.5rem;
+    }
+}
+
+

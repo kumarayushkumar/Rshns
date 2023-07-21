@@ -1,0 +1,76 @@
+@use 'custom' as *;
+
+footer {
+    color: $tertiary;
+    background-color: $black;
+
+        
+    .btt {
+        position: fixed;
+        z-index: 100;
+        width: 2.4rem;
+        height: 2.4rem;
+        right: 1rem;
+        bottom: 1rem;
+
+        @include media-breakpoint-up(sm) {
+            width: 3rem;
+            height: 3rem;
+            right: 1.8rem;
+            bottom: 1.8rem;
+        }
+
+        i {
+            color: $white;
+            font-size: 1.4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include media-breakpoint-up(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    li {
+        font-size: 1rem;
+        @include media-breakpoint-up(md) {
+            font-size: 1.2rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .f-social {
+        font-size: 2rem;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: left;
+        }
+        
+        a {
+            padding-right: 1rem;
+        }
+    }
+
+    .growigh {
+        text-decoration: none;
+        font-size: 1.1rem;
+        
+        .growigh__name {
+            color: rgba($white,0.9);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+    
+        .growigh__w {
+            color: rgba(#ffb428,0.9);
+            font-weight: 500;
+        }
+    }
+}

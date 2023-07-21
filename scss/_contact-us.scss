@@ -1,0 +1,18 @@
+@use 'custom' as *;
+
+#contact-us {
+    background-color: $tertiary;
+}
+
+.max-width {
+    max-width: 768px;
+}
+
+#contact-us {
+    background-image: url('../images/istockphoto-1287981230-170667a.webp');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+}
